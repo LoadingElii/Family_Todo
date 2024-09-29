@@ -6,22 +6,36 @@ CRUD(Create, Read, Update, Delete) on:
 - Member Objects
 - TodoItem Objects
 
-## Tech Used
+## Tech Used:
 
 1. Flask
 2. SQLAlchemy
 3. Pyjwt
 4. Python-dotenv
 
-## Features
+## Key Features:
 
-1. Family's have a list of Members and TodoItems.
+### Family objects
 
-2. Member's have their own Todo list to store their TodoItems. 
-3.
+1. Contains a list of Members
+2. Contains a list of TodoItems
+
+### Member objects 
+
+3. Contains a list of TodoItems
+4. May be a Member of a Family
+ 
+### TodoItem objects 
+
+5. Contains a Description field
+6. Contains a Urgency field
+7. Contains a Completed field
+
+## Setup
 
 
-5. TodoItems 
+
+
 
 
 
