@@ -47,7 +47,7 @@ CRUD(Create, Read, Update, Delete) on:
 
 ## Setup
 
-First step is install * virtualenv *:
+First step is install **virtualenv**:
 
 ``` bash
 pip install virtualenv
@@ -63,31 +63,31 @@ python -m venv venv-name
 
 Then activate the virtual enviroment:
 
--For * Windows *
+-For **Windows**
 
 ``` bash
 path\to\venv-name\Scripts\activate.bat
 
 ```
 
--For * Linux *
+-For **Linux**
 
 ``` bash
 source path/to/venv-name/bin/activate
 
 ```
 
-In the the main directory there is a * requirements.txt * file.
+In the the main directory there is a **requirements.txt** file.
 Which is used to install the required dependencies 
 
-How to use * requirements.txt *:
+How to use **requirements.txt**:
 
 ``` bash
 pip install -r requirements.txt
 
 ```
 
-Add your own * .env * file to your project.
+Add your own **.env** file to your project.
 Put your environment properties in there.
 
 
