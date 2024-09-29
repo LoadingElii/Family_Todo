@@ -49,43 +49,43 @@ CRUD(Create, Read, Update, Delete) on:
 
 First step is install * virtualenv *:
 
-''' bash
+``` bash
 pip install virtualenv
 
-'''
+```
 
 Next is to create a virutal enviroment:
 
-''' bash
+``` bash
 python -m venv venv-name
 
-'''
+```
 
 Then activate the virtual enviroment:
 
 -For * Windows *
 
-''' bash
+``` bash
 path\to\venv-name\Scripts\activate.bat
 
-'''
+```
 
 -For * Linux *
 
-''' bash
+``` bash
 source path/to/venv-name/bin/activate
 
-'''
+```
 
 In the the main directory there is a * requirements.txt * file.
 Which is used to install the required dependencies 
 
 How to use * requirements.txt *:
 
-''' bash
+``` bash
 pip install -r requirements.txt
 
-'''
+```
 
 Add your own * .env * file to your project.
 Put your environment properties in there.
@@ -94,10 +94,10 @@ Put your environment properties in there.
 To start the Flask Application on a development server 
 run command in your application main folder:
 
-''' bash
+``` bash
 flask --app app run
 
-'''
+```
 
 ## Usage
 
