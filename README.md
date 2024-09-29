@@ -12,6 +12,7 @@ CRUD(Create, Read, Update, Delete) on:
 2. SQLAlchemy
 3. Pyjwt
 4. Python-dotenv
+5. PostgreSQL
 
 ## Key Features:
 
