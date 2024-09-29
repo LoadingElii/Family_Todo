@@ -7,7 +7,7 @@ All to often we forget to do something. That is the problem that this App fixes!
 Every member has there own personal list of things they need to do.
 Members part of a family have access to the family's todos as well.
 
-I have made a video tutorial building showing
+I have made a video tutorial showing
 how to build this application step by step.
 
 link to video:******
@@ -103,141 +103,140 @@ flask --app app run
 ### Admin/Member endpoints:
 
 1. Create Member
-  -
-   ``` bash
-   [POST] http://127.0.0.1:5000/admin/signup
-   
-   ```
+
+  - ``` bash
+    [POST] http://127.0.0.1:5000/admin/signup
+    ```
    
 2. Login Member
-  -
-   ``` bash
-   [POST] http://127.0.0.1:5000/admin/login
+  
+  - ``` bash
+    [POST] http://127.0.0.1:5000/admin/login
    
-   ```
+    ```
    After login get token from response and in your Headers create **Key** Authorization and set the **token** as the **value**. The below endpoints require this to access the data.
    
 4. Get Member
-  -
-   ``` bash
-   [GET] http://127.0.0.1:5000/member/
+  
+  - ``` bash
+    [GET] http://127.0.0.1:5000/member/
    
-   ```
+    ```
    
 5. Get Member By Id
-  -
-   ``` bash
-   [GET] http://127.0.0.1:5000/member/<id>
+  
+  - ``` bash
+    [GET] http://127.0.0.1:5000/member/<id>
    
-   ```
+    ```
    
 6. Update Member 
-  -
-   ``` bash
-   [PUT] http://127.0.0.1:5000/member/update
+  
+  - ``` bash
+    [PUT] http://127.0.0.1:5000/member/update
    
-   ```
+    ```
 
 7. Delete Member
-  -
-   ``` bash
-   [DELETE] http://127.0.0.1:5000/member/delete/<id>
+  
+  - ``` bash
+    [DELETE] http://127.0.0.1:5000/member/delete/<id>
    
-   ```
+    ```
 ### Family endpoints:
 
 1. Create Family
-  -
-   ``` bash
-   [POST] http://127.0.0.1:5000/family/create
+  
+  - ``` bash
+    [POST] http://127.0.0.1:5000/family/create
    
-   ```
+    ```
    
 2. Get Family
-  -
-   ``` bash
-   [GET] http://127.0.0.1:5000/family/
+  
+  - ``` bash
+    [GET] http://127.0.0.1:5000/family/
    
-   ```
+    ```
 
 3. Update Family
-  -
-   ``` bash
-   [PUT] http://127.0.0.1:5000/family/update
+  
+  - ``` bash
+    [PUT] http://127.0.0.1:5000/family/update
    
-   ```
+    ```
 
 4. Add Member to Family
-  -
-   ``` bash
-   [PUT] http://127.0.0.1:5000/family/member/add
+  
+  - ``` bash
+    [PUT] http://127.0.0.1:5000/family/member/add
    
-   ```
+    ```
 
 5. Remove Family Member By Id
-  -
-   ``` bash
-   [DELETE] http://127.0.0.1:5000/family/member/<id>
+  
+  - ``` bash
+    [DELETE] http://127.0.0.1:5000/family/member/<id>
    
-   ```
+    ```
 
 6. Delete Family
-  -
-   ``` bash
-   [DELETE] http://127.0.0.1:5000/family/delete
+  
+  - ``` bash
+    [DELETE] http://127.0.0.1:5000/family/delete
    
-   ```
+    ```
    
 ### TodoItem endpoints:
 
 1. Create Member TodoItem
-  -
-   ``` bash
-   [POST]http://127.0.0.1:5000/todos/create
+  
+  - ``` bash
+    [POST]http://127.0.0.1:5000/todos/create
    
-   ```
+    ```
    
 2. Create Family TodoItem
-  -
-   ``` bash
-   [POST] http://127.0.0.1:5000/todos/family/create
+  
+  - ``` bash
+    [POST] http://127.0.0.1:5000/todos/family/create
    
-   ```
+    ```
 
 3. Get TodoItem By Id
-  -
-   ``` bash
-   [GET] http://127.0.0.1:5000/todos/<id>
+  
+  - ``` bash
+    [GET] http://127.0.0.1:5000/todos/<id>
    
-   ```
+    ```
 
 4. Get All Member TodoItems
-  -
-   ``` bash
-   [GET] http://127.0.0.1:5000/todos/all
+  
+  - ``` bash
+    [GET] http://127.0.0.1:5000/todos/all
    
-   ```
+    ```
 
 5. Get All Family TodoItems
-  -
-   ``` bash
-   [GET] http://127.0.0.1:5000/todos/family/all
+  
+  - ``` bash
+    [GET] http://127.0.0.1:5000/todos/family/all
    
-   ```
+    ```
 
 6. Update Todo Item By Id
-  -
-   ``` bash
-   [PUT] http://127.0.0.1:5000/todos/update/<id>
+  
+  - ``` bash
+    [PUT] http://127.0.0.1:5000/todos/update/<id>
    
-   ```
+    ```
 
 7. Delete Todo Item By Id
-  -
-   ``` bash
-   [DELETE] http://127.0.0.1:5000/todos/delete/<id>
+  
+  - ``` bash
+    [DELETE] http://127.0.0.1:5000/todos/delete/<id>
    
-   ```
+    ```
 
 ## Project Status
 
