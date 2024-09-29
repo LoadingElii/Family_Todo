@@ -34,6 +34,37 @@ CRUD(Create, Read, Update, Delete) on:
 
 ## Setup
 
+First step is install *virtualenv*:
+
+'''code
+pip install virtualenv
+'''
+
+Next is to create a virutal enviroment:
+
+'''code
+python -m venv venv-name
+'''
+
+Then activate the virtual enviroment:
+
+-For *Windows*
+
+'''code
+path\to\venv-name\Scripts\activate.bat
+'''
+
+-For *Linux*
+
+'''code
+source path/to/venv-name/bin/activate
+'''
+
+
+
+
+
+
 
 
 
