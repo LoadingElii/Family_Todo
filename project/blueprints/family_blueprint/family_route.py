@@ -167,7 +167,7 @@ def delete_family_member(current_member, id):
 
         return make_response(
             {
-                "message": "Member has been deleted for family."
+                "message": "Member has been deleted from family."
             }, 200
         )
     except Exception as e :
