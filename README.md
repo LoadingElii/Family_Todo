@@ -244,10 +244,18 @@ flask --app app run
 
 ## Room for Improvement
 
--Implement feature to allow a family member to add todo 
+- Implement feature to allow a family member to add todo 
 from family's todo list to member todo list.
 
-## Acknowledgements
+- Return family todo's when getting family object.
+
+## Acknowledgements/Resources
+
+- https://www.patricksoftwareblog.com/
+
+- https://www.youtube.com/watch?v=OLsVfmjEpSc
+
+- https://flask.palletsprojects.com/en/2.3.x/patterns/appfactories/
 
 
 
