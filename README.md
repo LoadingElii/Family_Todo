@@ -10,7 +10,7 @@ Members part of a family have access to the family's todos as well.
 I have made a video tutorial showing
 how to build this application step by step.
 
-link to video: [Video Tutorial](https://www.youtube.com/watch?v=qKOCXL5ZseA&t=6020s)
+link to video: [Flask CRUD API Tutorial](https://www.youtube.com/watch?v=qKOCXL5ZseA)
 
 An Flask API used to perform 
 CRUD(Create, Read, Update, Delete) on:
