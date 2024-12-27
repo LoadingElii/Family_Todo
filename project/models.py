@@ -54,5 +54,7 @@ class TodoItem(db.Model):
             "id": self.id,
             "description": self.description,
             "urgency": self.urgency,
-            "completed": self.completed            
+            "completed": self.completed,
+            "family_id": self.family_id,
+            "member_id": self.member_id            
         }

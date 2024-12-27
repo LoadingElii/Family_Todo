@@ -1,3 +1,4 @@
+from base64 import b64decode
 from functools import wraps
 from config import Config as c
 from flask import make_response, request
@@ -19,16 +20,16 @@ def token_check(f):
                     "message": "Opps! Token is missing."
                 },400
             )
-        
 
         try:
             data = jwt.decode(token, c.SECRET_KEY, algorithms=["HS256"])
             current_member = Member.query.filter_by(id = data["id"]).first()
             print(current_member.serialize)
-        except jwt.DecodeError as e :
+        except Exception as e :
             return make_response(
                 {
-                    "message": "Token is invalid."
+                    "message": "Token is invalid " + "error " + str(e) 
+
                 },400
             )
         return f(current_member, *args, **kwargs)
