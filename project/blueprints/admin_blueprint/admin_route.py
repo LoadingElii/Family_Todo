@@ -35,7 +35,8 @@ def signup():
 
         return make_response(
             {
-                "message": "Success! Member was created."
+                "message": "Success! Member was created.",
+                "member_id": member.id,
             },200
         )
     return make_response(
@@ -72,7 +73,7 @@ def login():
 
         token = jwt.encode({
             "id": member.id,
-            "exp": datetime.now().astimezone() + timedelta(minutes=30)
+            "exp": datetime.now().astimezone() + timedelta(hours=24)
         },
         current_app.config["SECRET_KEY"], "HS256"
         )
@@ -80,6 +81,7 @@ def login():
         return make_response(
             {
                 "message": "Success! You are logged in.",
+                "member_id": member.id,
                 "token": token
             },200
         )

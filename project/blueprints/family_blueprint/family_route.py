@@ -57,18 +57,17 @@ def create_family(current_member):
 @token_check
 def update_family(current_member):
     data = request.json
-    name = data.get("family_name")
 
-    if not name:
+    if not data:
         return make_response({"message": "Opps! Please enter valid name "}, 400)
-
     try:
         Family.query.filter_by(id=current_member.family_id).update(data)
         db.session.commit()
         return make_response({"message": "Success family has been updated."}, 200)
     except Exception as e:
+        print(e)
         return make_response(
-            {"message": "Opps! Family didn't update. Try again. "}, 500
+            {"message": "Opps! Family didn't update. Try again."}, 500
         )
 
 
