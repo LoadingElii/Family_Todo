@@ -30,7 +30,7 @@ def create_member_todo(current_member):
     data = request.json
     description = data.get("description")
     urgency = data.get("urgency")
-    completed = bool(data.get("completed") == 1)
+    completed = bool(data.get("completed") == "1")
 
     if not description and urgency:
         return make_response(
@@ -73,7 +73,7 @@ def create_family_todo(current_member):
     data = request.json
     description = data.get("description")
     urgency = data.get("urgency")
-    completed = bool(data.get("completed") == 1)
+    completed = bool(data.get("completed") == "1")
 
     if not description and urgency:
         return make_response({"message": "Invalid todo. Please complete all fields."})
@@ -99,7 +99,7 @@ def update_todo_by_id(current_member, id):
     data = request.json
     description = data.get("description")
     urgency = data.get("urgency")
-    completed = bool(data.get("completed") == 1)
+    completed = bool(data.get("completed") == "1")
     member_id = data.get("member_id")
     family_id = data.get("family_id")   
 
