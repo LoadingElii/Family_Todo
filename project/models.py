@@ -35,7 +35,8 @@ class Member(db.Model):
             "id": self.id,
             "first_name": self.first_name,
             "last_name": self.last_name,
-            "email": self.email            
+            "email": self.email,
+            "family_id" : self.family_id,       
         }
     
 

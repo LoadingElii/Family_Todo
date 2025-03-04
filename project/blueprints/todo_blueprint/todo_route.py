@@ -39,10 +39,10 @@ def create_member_todo(current_member):
 
     try:
         Todo = TodoItem(
-            description=description,
-            urgency=urgency,
-            completed=completed,
-            member_id=current_member.id,
+            description = description,
+            urgency = urgency,
+            completed = completed,
+            member_id = current_member.id,
         )
 
         db.session.add(Todo)
@@ -80,10 +80,10 @@ def create_family_todo(current_member):
 
     try:
         Todo = TodoItem(
-            description=description,
-            urgency=urgency,
-            completed=completed,
-            family_id=current_member.family_id,
+            description = description,
+            urgency = urgency,
+            completed = completed,
+            family_id = current_member.family_id,
         )
         db.session.add(Todo)
         db.session.commit()
@@ -106,11 +106,11 @@ def update_todo_by_id(current_member, id):
     try:
 
         updateTodo = {
-            "description":description,
-            "urgency":urgency,
-            "completed":completed,
-            "family_id":family_id,
-            "member_id":member_id,
+            "description" : description,
+            "urgency" : urgency,
+            "completed" : completed,
+            "family_id" : family_id,
+            "member_id" : member_id,
         }
 
         TodoItem.query.filter_by(id=id).update(updateTodo)
