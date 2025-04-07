@@ -30,7 +30,7 @@ def get_family(current_member):
 @token_check
 def create_family(current_member):
     data = request.json
-    name = data
+    name = data.get("family_name")
 
     if not name:
         return make_response({"message": "Opps! Please provide family name"})
@@ -59,8 +59,9 @@ def create_family(current_member):
 @token_check
 def update_family(current_member):
     data = request.json
-    name = data
-    if not data:
+    name = data.get("family_name")
+    
+    if not name:
         return make_response({"message": "Opps! Please enter valid name "}, 400)
     try:
         
