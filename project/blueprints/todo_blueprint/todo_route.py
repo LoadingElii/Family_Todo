@@ -100,8 +100,7 @@ def update_todo_by_id(current_member, id):
     description = data.get("description")
     urgency = data.get("urgency")
     completed = bool(data.get("completed") == 1)
-    member_id = data.get("member_id")
-    family_id = data.get("family_id")   
+  
 
     try:
 
@@ -109,8 +108,6 @@ def update_todo_by_id(current_member, id):
             "description" : description,
             "urgency" : urgency,
             "completed" : completed,
-            "family_id" : family_id,
-            "member_id" : member_id,
         }
         print(updateTodo)
 
