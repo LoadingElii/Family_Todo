@@ -93,7 +93,7 @@ def delete_family(current_member):
 @token_check
 def add_family_member(current_member):
     data = request.json
-    email = data.get("email")
+    email = data
 
     member = Member.query.filter_by(email=email).first()
     if not member:
